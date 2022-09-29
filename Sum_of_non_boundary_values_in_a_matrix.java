@@ -12,9 +12,11 @@ class Sum{
             }
         }
         int sum=0;
-        for(int i=1;i<m-1;i++){
-            for(int j=1;j<n-1;j++){
-                sum+=a[i][j];
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                if(i!=0 && i!=m-1 && j!=0 && j!=n-1){
+                    sum+=a[i][j];
+                }
             }
         }
         System.out.print(sum);
