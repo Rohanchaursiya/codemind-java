@@ -1,28 +1,24 @@
-import java.util.Scanner;
-class ElementSearch
-{
-    public static void main(String args[])
-    {
-        int n;
+import java.util.*;
+class Element_Search{
+    public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
-        n=sc.nextInt();
-        int[] arr=new int[10000];
+        int n=sc.nextInt();
+        int[] arr=new int[n];
         for(int i=0;i<n;i++){
             arr[i]=sc.nextInt();
         }
-        int k,count=0;
-        k=sc.nextInt();
+        int e=sc.nextInt();
+        int count=0;
         for(int i=0;i<n;i++){
-            if(arr[i]==k){
+            if(arr[i]==e){
                 count+=1;
             }
         }
-        if(count!=0){
-            System.out.print("True");
+        if(count==0){
+            System.out.println("False");
         }
         else{
-            System.out.print("False");
+            System.out.println("True");
         }
-    sc.close();
     }
 }
