@@ -7,10 +7,10 @@ class Pattern{
             for(int j=1;j<=(n-2);j++){
                System.out.print(j); 
             }
-            int c=1;
+            int c=n-3;
             for(int k=1;k<=n-3;k++){
                 System.out.print(c);
-                c++;
+                c--;
             }
             System.out.println("");
         }
