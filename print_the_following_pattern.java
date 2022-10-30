@@ -4,15 +4,16 @@ class Pattern{
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         for(int i=1;i<=n;i++){
-            for(int j=1;j<=(n-2);j++){
-               System.out.print(j); 
+            for(int j=i;j<=n-1;j++){
+                System.out.print(" ");
             }
-            int c=n-3;
-            for(int k=1;k<=n-3;k++){
-                System.out.print(c);
-                c--;
+            for(int j=i-1;j>0;j--){
+                System.out.print(j);
             }
-            System.out.println("");
+            for(int j=0;j<i;j++){
+                System.out.print(j);
+            }
+            System.out.println();
         }
     }
 }
